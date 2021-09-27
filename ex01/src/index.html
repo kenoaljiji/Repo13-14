@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="/ex01//styles/index.css">
     <title>Gallery’s page</title>
 </head>
@@ -12,20 +13,20 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <div class="images">
+                <div class="images" onclick="openModal('image01.html')">
                     <img src="/ex01/images/img1.jpg" alt="Marathon" class="img">
                     <div class="images-overlay">
                         <h1>Marathon</h1>
                     </div>
                 </div>
-                <div class="images">
+                <div class="images" onclick="openModal('image05.html')">
                     <img src="/ex01/images/img5.jpg" alt="Weight Lifting" class="img">
                     <div class="images-overlay">
                         <h1>Weight Lifting</h1>
                     </div>
                 </div>
 
-                <div class="images">
+                <div class="images" onclick="openModal('image08.html')">
                     <img src="/ex01/images/img8.jpg" alt="Jogging" class="img">
                     <div class="images-overlay">
                         <h1>Jogging</h1>
@@ -35,13 +36,13 @@
         
             </div>
             <div class="column">
-                <div class="images">
+                <div class="images" onclick="openModal('image02.html')">
                     <img src="/ex01/images/img2.jpg" alt="Gymnastics" class="img">
                     <div class="images-overlay">
                         <h1>Gymnastics</h1>
                     </div>
                 </div>
-                <div class="images">
+                <div class="images" onclick="openModal('image06.html')">
                     <img src="/ex01/images/img6.jpg" alt="Basketball" class="img">
                     <div class="images-overlay">
                         <h1>Basketball</h1>
@@ -50,20 +51,20 @@
 
             </div>
             <div class="column">
-                <div class="images">
+                <div class="images" onclick="openModal('image03.html')">
                     <img src="/ex01/images/img3.jpg" alt="Climbing" class="img">
                     <div class="images-overlay">
                         <h1>Climbing</h1>
                     </div>
                 </div>
-                <div class="images">
+                <div class="images" onclick="openModal('image07.html')">
                     <img src="/ex01/images/img7.jpg" alt="Swimming" class="img">
                     <div class="images-overlay">
                         <h1>Swimming</h1>
                     </div>
                 </div>
 
-                <div class="images">
+                <div class="images" onclick="openModal('image09.html')" >
                     <img src="/ex01/images/img9.jpg" alt="Running" class="img">
                     <div class="images-overlay">
                         <h1>Running</h1>
@@ -71,17 +72,17 @@
                 </div>
             </div>
             <div class="column">
-                <div class="images">
+                <div class="images" onclick="openModal('image04.html')">
                     <img src="/ex01/images/img4.jpg" alt="Skiing" class="img">
                     <div class="images-overlay">
                         <h1>Skiing</h1>
                     </div>
                 </div>
 
-                <div class="images">
-                    <img src="/ex01/images/img10.jpg" alt="Basketball" class="img">
+                <div class="images" onclick="openModal('image10.html')">
+                    <img src="/ex01/images/img10.jpg" alt="Cycling" class="img">
                     <div class="images-overlay">
-                        <h1>Basketball</h1>
+                        <h1>Cycling</h1>
                     </div>
                 </div>
                 
@@ -91,7 +92,17 @@
         
         </div>
     </div>
-    
+
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-content">
+                <iframe id="page" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        
+    </div>
+   
     <script src="/ex01/scripts/index.js"></script>
 </body>
 </html>
